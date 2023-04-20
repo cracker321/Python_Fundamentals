@@ -30,3 +30,16 @@ num2 = int(input("두 번재 숫자 입력해봐: "))
 result = num1 if num1 > num2 else num2
 print(result)
 
+
+# < ex4: 문자열 길이 >
+# - 입력된 문자열의 길이를 출력하는 코드. 
+stringgg = str(input("문자열 입력해봐. 그 문자열의 길이 출력해줄게"))
+result = len(stringgg) if stringgg else "너가 입력한 거 문자열 아님..."
+print(result)
+
+
+# < ex5: 등급에 따라 학점을 출력 >
+# - 입력된 점수에 따라 학점을 출력하는 코드.
+score = int(input("점수를 입력해주세요: "))
+result = 'A' if score >= 90 else 'B' if 80< score <=90 else 'C' if 70<score<=80 else 'D'
+print(result)
