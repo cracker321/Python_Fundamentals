@@ -25,7 +25,7 @@ print(balance)
 
 # ========================================================================================================
 
-def withdrawl(balance, withdrawl_withdrawl_amount):
+def withdrawl(balance, withdrawl_amount):
     if balance > withdrawl_amount:
         print("출금이 완료되었습니다. 잔액은 {0}원 입니다.".format(balance - withdrawl_amount))
         return balance - withdrawl_amount
