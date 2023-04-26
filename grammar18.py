@@ -16,20 +16,23 @@
 my_dict = {"apple":"사과"}
 
 
-# < dictionary에서 '밸류값'을 꺼내는 방법 >
-# 대괄호 안에 밸류값에 해당하는 '키'를 넣는다. 
+# < dictionary에서 '값'을 꺼내는 방법 >
+# '대괄호' 안에 '값'에 해당하는 '키'를 넣는다. 
 print(my_dict["apple"]) # 출력값: '사과'
 
 
-# < dictionary에 새로운 키와 값을 넣는 방법 >
-# 리스트에 해당하는 새로운 '키'를 추가한다.
+# < dictionary에 새로운 '한 쌍의 키와 값'을 넣는 방법 >
+# 아래 형식처럼 새로운 '키'와 '값'를 추가한다.
 my_dict['banana'] = '바나나'
 print(my_dict)
 
 
 # < dictionary의 모든 키와 값 쌍을 깔끔하게 확인하는 방법: items() >
+# - 아래의 key, value는 고정된 변수명이 아니라, 그냥 '키'와 '값'을 의미
+#   예를 들어, '변수 key'를 '변수 fruit', '변수 value''를 '변수 species'로 해도 된다!
 for key, value in my_dict.items():
     print(key, value) 
+    
     
 # < dictionary에서 특정 키(그 키에 해당하는 '값'도 당연히 같이 삭제됨)를 삭제하기: del >
 del my_dict['banana']
