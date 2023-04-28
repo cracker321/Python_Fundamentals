@@ -28,5 +28,5 @@ def checkpoint_ret(gun, soldiers):
     print("[함수 내] 남은 총: {0}".format(gun))
     return gun
 
-checkpoint_ret(gun, 20)
+checkpoint_ret(gun, 20) # 여기서 인자값으로 적용되는 gun의 값은 8이다.
     

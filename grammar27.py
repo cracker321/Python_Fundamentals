@@ -33,7 +33,7 @@ for subject, score in scores.items():
                                                               #              따라서, 여기서 int형인 score값들을 str형으로 형변환시켜줌. 그냥, 출력문 확인하면 된다.
                                                               
                                                               
-# < 문자열 str 앞을 0으로 채우기: zfill(n) >
+# < 문자열 str 앞을 0으로 채우기: zfill(q) >
 # ex1) 은행 대기순번표: 001, 002, 003 ... 처럼 앞에 00x, 0xx 와 같은 형식으로 출력하고자 할 때.
 
 for num in range(1, 21):

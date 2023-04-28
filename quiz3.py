@@ -43,9 +43,10 @@ from random import randint
 cnt = 0 # 총 탑승 승객 수(=매칭된 승객의 수) 초기화
 
 # 랜덤 승객 50명의 운행 랜덤 소요시간을 랜덤하게 난수로 생성하기 
-for i in range(1, 51): 
-    time = randint(5, 50) # i번째 승객의 소요시간을 5~50분 사이로 랜덤하게 생성하는 것
-    
+for i in range(1, 51): # range(): 마지막 인수는 포함되지 않음
+    time = randint(5, 50) # randint(): 마지막 인수 포함됨. 
+                          # i번째 승객의 소요시간을 5~50분 사이로 랜덤하게 생성하는 것
+                          # cf) randrange(): 마지막 원소 포함되지 않음. 따라서 여기서 randrange()를 사용하려면, randrange(5, 51)로 써야 함.
     if 5 <= time <= 15:
         print("<0> {0}번째 손님 (소요시간: {1}분)".format(i, time)) # i는 {0}으로 들어가고, time은 {1}로 들어감.
         cnt += 1 # 이 경우는, 매칭 성공했으니 '매칭 성공한 승객 수 증가'
